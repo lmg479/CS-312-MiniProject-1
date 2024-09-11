@@ -1,0 +1,95 @@
+body 
+{
+  background-color: #d0e7f9;
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2, p 
+{
+  color: #333;
+}
+
+form 
+{
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px;
+  margin-top: 30px;
+}
+
+textarea 
+{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button 
+{
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px;
+}
+
+form.delete-form 
+{
+  margin: 0;     
+  padding: 0;     
+}
+
+button.edit-button 
+{
+  background-color: #000;
+  color: white;
+  box-shadow: 2px 2px 8px;
+}
+
+button.edit-button:hover 
+{
+  background-color: #333;
+}
+
+button.delete-button 
+{
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.delete-button:hover 
+{
+  background-color: #333;
+}
+
+button:hover 
+{
+  background-color: #333;
+}
+
+.center-button
+{
+  display: flex;
+  justify-content: center;
+}
+
+ hr.thick-line 
+ {
+    border: none;
+    border-top: 1px solid #333;
+    width: 95%;
+ }
+
+ hr.thin-line 
+ {
+    border: none;
+    border-top: 1px solid #333;
+    width: 70%;
+}

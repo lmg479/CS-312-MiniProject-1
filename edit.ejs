@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link href="/styles.css" rel="stylesheet">
+      <title>Edit Blog Post</title>
+   </head>
+   <body>
+       <h1>Edit Blog Post</h1>
+
+       <form action="/edit/<%= postId %>" method="post" class="edit-form">
+         <label for="title">Title:</label>
+         <br><br>
+         <textarea id="title" name="title" rows="1" cols="60" required><%= post.title %></textarea>
+         <br><br>
+
+         <label for="content">Content:</label>
+         <br><br>
+         <textarea id="content" name="content" rows="8" cols="60" required><%= post.content %></textarea>
+         <br><br>
+
+         <label for="otherInfo">Other Information:</label>
+         <br><br>
+         <textarea id="otherInfo" name="otherInfo" rows="3" cols="60" required><%= post.otherInfo %></textarea>
+         <br><br>
+
+         <label for="name">Creator Name:</label>
+         <br><br>
+         <textarea id="name" name="name" rows="1" cols="60" required><%= post.name %></textarea>
+         <br><br>
+
+       <div class="center-button">
+           <button type="submit">Submit Post</button>
+      </div>
+       </form>
+   </body>
+</html>

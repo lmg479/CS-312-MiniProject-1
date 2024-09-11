@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link href="/styles.css" rel="stylesheet">
+      <title>Create and Edit Blog Posts</title>
+   </head>
+   <body>
+
+    <h1>All Blog Posts</h1>
+    <p>Below you can view previous posts as well as edit and delete them</p>
+
+    <ul>
+       <% blogPosts.forEach(function(post, index) { %>
+         <hr class="thin-line">
+         <h3><b></b><%= post.title %></h3>
+         <p><b>Creator:</b> <%= post.name %></p>
+         <p><b>Content:</b> <%= post.content %></p>
+         <p><b>Other Info:</b> <%= post.otherInfo %></p>
+         <p><b>Created At:</b> <%= post.creationTime %></p>
+
+         <a href="/edit/<%= index %>"><button type="button" class="edit-button">Edit</button></a>
+         
+         <form action="/delete/<%= index %>" method="post" class="delete-form">      
+            <button type="submit" class="delete-button">Delete</button>
+        </form>
+       <% }) %>
+    </ul>
+    <hr class="thick-line">
+   <h2>Create a New Blog Post</h2>
+   <p>Below you will enter the title, content, other information, and name</p>
+   <form action="/new" method="post">
+     <label for="title">Title:</label>
+     <br>
+     <textarea id="title" name="title" rows="1" cols="60" required></textarea>
+     <br><br>
+
+     <label for="name">Creator Name:</label>
+     <br>
+     <textarea id="name" name="name" rows="1" cols="60" required></textarea>
+     <br><br>
+
+     <label for="content">Content:</label>
+     <br>
+     <textarea id="content" name="content" rows="8" cols="60" required></textarea>
+     <br><br>
+
+     <label for="otherInfo">Other Information:</label>
+     <br>
+     <textarea id="otherInfo" name="otherInfo" rows="3" cols="60" required></textarea>
+     <br><br>
+    <div class="center-button">
+        <button type="submit">Submit Post</button>
+   </div>
+   </form>
+</body>
+</html>

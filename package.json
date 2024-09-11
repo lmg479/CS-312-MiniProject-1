@@ -1,0 +1,25 @@
+{
+  "name": "cs-312-miniproject-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmg479/CS-312-MiniProject-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmg479/CS-312-MiniProject-1/issues"
+  },
+  "homepage": "https://github.com/lmg479/CS-312-MiniProject-1#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.20.0"
+  },
+  "description": ""
+}
